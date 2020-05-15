@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{E2EE8349-E4A1-4893-A339-BE447002A022}</ProjectGuid>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>tConfig</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Terraria.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GameIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Boo.Lang, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo.0.9.4\lib\Boo.Lang.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Compiler, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo-Compiler.0.9.4\lib\Boo.Lang.Compiler.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Extensions, Version=2.9.6.1, Culture=neutral, PublicKeyToken=e25da6af3567ee0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo.Lang.0.9.6.2\lib\Boo.Lang.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Parser, Version=2.0.9.4, Culture=neutral, PublicKeyToken=32c39770e9a21a67, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo-Compiler.0.9.4\lib\Boo.Lang.Parser.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.PatternMatching, Version=2.9.6.1, Culture=neutral, PublicKeyToken=e25da6af3567ee0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo.Lang.0.9.6.2\lib\Boo.Lang.PatternMatching.dll</HintPath>
+    </Reference>
+    <Reference Include="Boo.Lang.Useful, Version=2.9.6.1, Culture=neutral, PublicKeyToken=e25da6af3567ee0d, processorArchitecture=MSIL">
+      <HintPath>..\packages\Boo.Lang.0.9.6.2\lib\Boo.Lang.Useful.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip, Version=1.9.1.8, Culture=neutral, PublicKeyToken=edbe51ad942a3f5c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ionic.Zip.1.9.1.8\lib\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="SevenZipSharp, Version=1.3.283.0, Culture=neutral, PublicKeyToken=c8ff6ba0184838bb, processorArchitecture=MSIL">
+      <HintPath>..\packages\Squid-Box.SevenZipSharp.1.3.283\lib\net45\SevenZipSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Game\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Graphics\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_32\Microsoft.Xna.Framework.Xact\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <HintPath>C:\WINDOWS\Microsoft.NET\assembly\GAC_MSIL\System.Web.Extensions\v4.0_4.0.0.0__31bf3856ad364e35\System.Web.Extensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Gajatko.IniFiles.Light\IniFileLight.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFile.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileBlankLine.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileCommentary.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileElement.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileReader.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileSection.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileSectionStart.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileSettings.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileValue.cs" />
+    <Compile Include="Gajatko.IniFiles\IniFileWriter.cs" />
+    <Compile Include="Org.Mentalis.Files\IniReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Terraria.Properties\Resources.cs" />
+    <Compile Include="Terraria.Properties\Settings.cs" />
+    <Compile Include="Terraria\ArrayHandler.cs" />
+    <Compile Include="Terraria\ArrayMetadata.cs" />
+    <Compile Include="Terraria\Attr.cs" />
+    <Compile Include="Terraria\AttrInterface.cs" />
+    <Compile Include="Terraria\Audio.cs" />
+    <Compile Include="Terraria\Biome.cs" />
+    <Compile Include="Terraria\BuffDefHandler.cs" />
+    <Compile Include="Terraria\BuffDefIDAccessor.cs" />
+    <Compile Include="Terraria\Builder.cs" />
+    <Compile Include="Terraria\ChatLine.cs" />
+    <Compile Include="Terraria\Chest.cs" />
+    <Compile Include="Terraria\ClientSock.cs" />
+    <Compile Include="Terraria\Cloud.cs" />
+    <Compile Include="Terraria\Codable.cs" />
+    <Compile Include="Terraria\Collision.cs" />
+    <Compile Include="Terraria\CombatText.cs" />
+    <Compile Include="Terraria\Condition.cs" />
+    <Compile Include="Terraria\Config.cs" />
+    <Compile Include="Terraria\Constants.cs" />
+    <Compile Include="Terraria\CustomItem.cs" />
+    <Compile Include="Terraria\CustomNPC.cs" />
+    <Compile Include="Terraria\CustomProjectile.cs" />
+    <Compile Include="Terraria\Data.cs" />
+    <Compile Include="Terraria\DefHandler.cs" />
+    <Compile Include="Terraria\DictionaryHandler.cs" />
+    <Compile Include="Terraria\Drop.cs" />
+    <Compile Include="Terraria\DropTable.cs" />
+    <Compile Include="Terraria\Dust.cs" />
+    <Compile Include="Terraria\Events.cs" />
+    <Compile Include="Terraria\ExporterFunc.cs" />
+    <Compile Include="Terraria\FsmContext.cs" />
+    <Compile Include="Terraria\Gore.cs" />
+    <Compile Include="Terraria\HoldStyleHandler.cs" />
+    <Compile Include="Terraria\IHoldStyle.cs" />
+    <Compile Include="Terraria\IItemSlotRender.cs" />
+    <Compile Include="Terraria\IJsonWrapper.cs" />
+    <Compile Include="Terraria\ImporterFunc.cs" />
+    <Compile Include="Terraria\Instantiater.cs" />
+    <Compile Include="Terraria\Interface.cs" />
+    <Compile Include="Terraria\Interfaceable.cs" />
+    <Compile Include="Terraria\InterfaceObj.cs" />
+    <Compile Include="Terraria\IPrefix.cs" />
+    <Compile Include="Terraria\IPrefixDefiner.cs" />
+    <Compile Include="Terraria\Item.cs" />
+    <Compile Include="Terraria\ItemBuilder.cs" />
+    <Compile Include="Terraria\ItemDefHandler.cs" />
+    <Compile Include="Terraria\ItemNameAccess.cs" />
+    <Compile Include="Terraria\ItemSlotRender.cs" />
+    <Compile Include="Terraria\ItemText.cs" />
+    <Compile Include="Terraria\IUseStyle.cs" />
+    <Compile Include="Terraria\JSONArray.cs" />
+    <Compile Include="Terraria\JsonData.cs" />
+    <Compile Include="Terraria\JSONDict.cs" />
+    <Compile Include="Terraria\JsonException.cs" />
+    <Compile Include="Terraria\JSONHandler.cs" />
+    <Compile Include="Terraria\JsonMapper.cs" />
+    <Compile Include="Terraria\JsonMockWrapper.cs" />
+    <Compile Include="Terraria\JsonReader.cs" />
+    <Compile Include="Terraria\JsonToken.cs" />
+    <Compile Include="Terraria\JsonType.cs" />
+    <Compile Include="Terraria\JsonWriter.cs" />
+    <Compile Include="Terraria\keyBoardInput.cs" />
+    <Compile Include="Terraria\Lang.cs" />
+    <Compile Include="Terraria\Lexer.cs" />
+    <Compile Include="Terraria\Lighting.cs" />
+    <Compile Include="Terraria\Liquid.cs" />
+    <Compile Include="Terraria\LiquidBuffer.cs" />
+    <Compile Include="Terraria\Main.cs" />
+    <Compile Include="Terraria\Menu.cs" />
+    <Compile Include="Terraria\messageBuffer.cs" />
+    <Compile Include="Terraria\ModDef.cs" />
+    <Compile Include="Terraria\ModPackBuilder.cs" />
+    <Compile Include="Terraria\ModPacks.cs" />
+    <Compile Include="Terraria\MouseTip.cs" />
+    <Compile Include="Terraria\Music.cs" />
+    <Compile Include="Terraria\NetMessage.cs" />
+    <Compile Include="Terraria\Netplay.cs" />
+    <Compile Include="Terraria\NPC.cs" />
+    <Compile Include="Terraria\npcDefHandler.cs" />
+    <Compile Include="Terraria\ObjectMetadata.cs" />
+    <Compile Include="Terraria\OnScreenInterface.cs" />
+    <Compile Include="Terraria\OnScreenInterfaceable.cs" />
+    <Compile Include="Terraria\OrderedDictionaryEnumerator.cs" />
+    <Compile Include="Terraria\Pair.cs" />
+    <Compile Include="Terraria\ParserToken.cs" />
+    <Compile Include="Terraria\Player.cs" />
+    <Compile Include="Terraria\Prefix.cs" />
+    <Compile Include="Terraria\Program.cs" />
+    <Compile Include="Terraria\ProgramServer.cs" />
+    <Compile Include="Terraria\ProjDefHandler.cs" />
+    <Compile Include="Terraria\ProjDefIDAccessor.cs" />
+    <Compile Include="Terraria\Projectile.cs" />
+    <Compile Include="Terraria\PropertyMetadata.cs" />
+    <Compile Include="Terraria\Recipe.cs" />
+    <Compile Include="Terraria\Saveable.cs" />
+    <Compile Include="Terraria\ServerSock.cs" />
+    <Compile Include="Terraria\Settings.cs" />
+    <Compile Include="Terraria\Sign.cs" />
+    <Compile Include="Terraria\SortFields.cs" />
+    <Compile Include="Terraria\SoundHandler.cs" />
+    <Compile Include="Terraria\soundInstanceHandler.cs" />
+    <Compile Include="Terraria\Star.cs" />
+    <Compile Include="Terraria\TextureHandler.cs" />
+    <Compile Include="Terraria\Tile.cs" />
+    <Compile Include="Terraria\TileBuilder.cs" />
+    <Compile Include="Terraria\TileDefHandler.cs" />
+    <Compile Include="Terraria\TMod.cs" />
+    <Compile Include="Terraria\TrackConsoleLine.cs" />
+    <Compile Include="Terraria\UnloadedPrefix.cs" />
+    <Compile Include="Terraria\UseStyleHandler.cs" />
+    <Compile Include="Terraria\WallDefHandler.cs" />
+    <Compile Include="Terraria\WeightedRandom.cs" />
+    <Compile Include="Terraria\WorldGen.cs" />
+    <Compile Include="Terraria\WrapperFactory.cs" />
+    <Compile Include="Terraria\WriterContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Terraria.Properties\Resources.resx" />
+    <EmbeddedResource Include="Terraria\Data.resx" />
+    <EmbeddedResource Include="Terraria\Microsoft.Xna.Framework.RuntimeProfile" />
+    <EmbeddedResource Include="Terraria\ModPacks.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GameIcon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
